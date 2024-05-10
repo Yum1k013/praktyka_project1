@@ -2,72 +2,77 @@
 @use 'mixins' as *;
 
 header {
-    height: 100vh;
-    background: url('../assets/img/bg-header.webp') center/cover fixed;
-    color: #fff;
+   height: 100vh;
+   background: url('../assets/img/bg-header.webp') center/cover fixed;
+   color: #fff;
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
+   display: flex;
+   justify-content: center;
+   align-items: center;
 
-    .header-box {
-     z-index: 1;
-     padding: 30px;
-     display: flex;
-     flex-direction: column;
+   .header-box {
+      z-index: 1;
+      padding: 30px;
+      display: flex;
+      flex-direction: column;
     }
 
-    h1 {
-       font-size: 2rem;
-       @include md-screen {
-          font-size: 3.4rem;
-       }
-       @include lg-screen {
-          font-size: 5.4rem;
-       }
-     //   text-align: center;
-       line-height: 2.4rem;
-       
-       margin-bottom: 50px;
+   h1 {
+      font-size: 2rem;
+      @include md-screen {
+         font-size: 3.4rem;
+      }
+      @include lg-screen {
+         font-size: 5.4rem;
+      }
+      line-height: 4.8rem;
+      margin-bottom: 50px;
+   }
+
+   p {
+      margin-bottom: 40px;
+      width: 90%;
+      @include md-screen {
+      width: 60%;
+      font-size: 1.2rem;
+   }
+   @include lg-screen {
+      width: 40%;
+   }
+      line-height: 2.2rem;
+      font-size: 1.1rem;
     }
 
-    p {
-     margin-bottom: 40px;
-     width: 60%;
-     line-height: 2.2rem;
-     font-size: 1.3rem;
-    }
-
-    a {
+   a {
      
-     text-align: center;
-     text-decoration: none;
-     line-height: 60px;
-     color: inherit;
-     font-weight: bolder;
-     font-size: 110%;
+      text-align: center;
+      text-decoration: none;
+      line-height: 60px;
+      color: inherit;
+      font-weight: bolder;
+      font-size: 110%;
 
-     width: 200px;
-     height: 60px;
-     background-color: $color5-transparent;
-     border-radius: 6px;
+      width: 200px;
+      height: 60px;
+      background-color: $color5;
+      border-radius: 6px;
 
-     transition: .5s;
+      transition: .5s;
 
-     &:hover {
-          background-color: $color5;
-          transform: translateX(10px);
-     }
+   &:hover {
+      background-color: $color1;
+      transform: translateY(-10px);
+   }
 
-    }
+   }
 
-    &::after {
-     content: '';
-     background-color: rgba(0, 0, 0, .5);
-     display: block;
-     width: 100%;
-     height: 100%;
-     position: absolute;
+   &::after {
+      content: '';
+      background-color: rgba(0, 0, 0, .5);
+      display: block;
+      width: 100%;
+      height: 100%;
+      position: absolute;
 
-    }
+   }
 }

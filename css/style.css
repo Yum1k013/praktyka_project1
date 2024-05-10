@@ -74,7 +74,7 @@ header .header-box {
 }
 header h1 {
   font-size: 2rem;
-  line-height: 2.4rem;
+  line-height: 4.8rem;
   margin-bottom: 50px;
 }
 @media screen and (min-width: 680px) {
@@ -89,9 +89,20 @@ header h1 {
 }
 header p {
   margin-bottom: 40px;
-  width: 60%;
+  width: 90%;
   line-height: 2.2rem;
-  font-size: 1.3rem;
+  font-size: 1.1rem;
+}
+@media screen and (min-width: 680px) {
+  header p {
+    width: 60%;
+    font-size: 1.2rem;
+  }
+}
+@media screen and (min-width: 1100px) {
+  header p {
+    width: 40%;
+  }
 }
 header a {
   text-align: center;
@@ -102,13 +113,13 @@ header a {
   font-size: 110%;
   width: 200px;
   height: 60px;
-  background-color: rgba(166, 115, 96, 0.6705882353);
+  background-color: #A67360;
   border-radius: 6px;
   transition: 0.5s;
 }
 header a:hover {
-  background-color: #A67360;
-  transform: translateX(10px);
+  background-color: #8C0327;
+  transform: translateY(-10px);
 }
 header::after {
   content: "";
