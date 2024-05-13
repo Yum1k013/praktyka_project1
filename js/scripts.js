@@ -10,6 +10,15 @@ hamburger.addEventListener('click', () => {
     menuDiv.classList.add('showMenu')
 });
 
-close.addEventListener('click', () =>{
+close.addEventListener('click', () => {
     menuDiv.classList.remove('showMenu');
+})
+
+const linksmenu = document.querySelectorAll('.navigation a');
+
+linksmenu.forEach(elem => {
+
+    elem.addEventListener('click', () => {
+        menuDiv.classList.remove('showMenu')
+    })
 })
