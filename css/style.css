@@ -363,6 +363,22 @@ section p {
   align-items: center;
 }
 
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-family: inherit;
+  width: 100%;
+  font-size: 1.6rem;
+}
+
+input {
+  display: block;
+  margin-bottom: 5px;
+  font-family: inherit;
+  width: 100%;
+  font-size: 1.6rem;
+}
+
 footer {
   height: 30vh;
   background-color: #0d0d0d;
