@@ -1,3 +1,9 @@
+@use 'variables' as *;
+
 footer {
-    $color1: blue;
+    display: flex;
+    align-items: center;
+    height: 30vh;
+    background-color: $color6;
+    color: $color4;
 }
