@@ -1,15 +1,38 @@
-label {
+%proparties {
     display: block;
     margin-bottom: 5px;
-    font-family: inherit;
     width: 100%;
-    font-size: 1.6rem;
+    font-size: 1.4rem;
 }
 
 input {
-    display: block;
-    margin-bottom: 5px;
+    @extend %proparties;
     font-family: inherit;
-    width: 100%;
-    font-size: 1.6rem;
+    padding: 10px;
+    border: 1px solid lightgrey;
+    border-radius: 4px;
+    outline: 0;
+
+    &:focus{
+        border-color: gray;
+    }
+
+    &[type="submit"] {
+        margin-top: 30px;
+        transition: .5s;
+
+        &:hover {
+            background-color: lightgrey
+        }
+    }
+}
+
+label {
+    @extend %proparties;
+}
+
+textarea {
+    @extend input;
+    resize: none;
+    height: 200px;
 }
